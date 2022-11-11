@@ -15,6 +15,7 @@ const ProductCard = ({ key1, item }) => {
     setTrigger(false);
     document.body.style.overflow = "unset";
   };
+
   return (
     <div className="product_item" key={key1}>
       <img src={item.image} className="item_img" alt={item.name} />

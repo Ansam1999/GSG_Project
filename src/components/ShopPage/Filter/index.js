@@ -28,6 +28,7 @@ const Filter = ({ categories, setCategory }) => {
           filterProducts={filterProducts}
         />
       ))}
+
       <hr className="line" />
     </div>
   );

@@ -68,6 +68,7 @@
     top: calc((185*100vw)/1440);
     display: none;
   }
+  
   .product_item:hover {
     margin-bottom: 24px;
     margin-top: -15px;

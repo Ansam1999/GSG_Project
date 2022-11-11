@@ -12,6 +12,7 @@ const FeaturedProducts = () => {
       new: true,
       id: 1,
     },
+
     {
       image: "./assets/img3.png",
       title: "Pueraria Mirifica And Study Phyto Estrogens",

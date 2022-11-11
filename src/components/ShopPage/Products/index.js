@@ -3,15 +3,7 @@ import ProductCard from "../../Shared/ProductCard";
 import "./Styles.css";
 
 const Products = ({ products, categoryToFilter }) => {
-  console.log("ff", categoryToFilter); /*useEffect(() => {
-    if (!categoryToFilter) {
-      setProducts(
-        products.filter((item) => item.category === categoryToFilter)
-      );
-    } else {
-      setProducts(products);
-    }
-  }, [categoryToFilter]);*/
+  console.log("ff", categoryToFilter);
 
   return (
     <div className="products">
