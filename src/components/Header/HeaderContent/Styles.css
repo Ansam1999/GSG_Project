@@ -1,0 +1,29 @@
+.header_content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+  .header_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 3;
+
+    padding-right: calc((150 * 100vw) / 1440);
+    padding-left: calc((150 * 100vw) / 1440);
+   padding-bottom: 10px;
+    background-color: white;
+    display: none;
+  }
+  .opened {
+    display: block;
+  }
+}

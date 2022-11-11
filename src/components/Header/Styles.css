@@ -1,0 +1,54 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    padding-left:calc((150*100vw)/1440);
+    padding-right: calc((150*100vw)/1440);
+    
+}
+
+.burger_menu{
+    display: none;
+}
+
+.matter_logo{
+    width: 120px;
+}
+
+@media only screen and (max-width:750px){
+    .header{
+       justify-content: space-between;    
+      
+       
+        
+    }
+  
+    .burger_menu{
+        display: inline;
+    }
+    .burger_menu:hover .header_content{
+      display: block;
+      cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .header{
+      
+       justify-content: space-between;
+        
+    }
+  .matter_logo{
+    width: 30%;
+  }
+    .burger_menu{
+        display: inline;
+    }
+    .burger_menu:hover .header_content{
+      display: block;
+      cursor: pointer;
+    }
+}

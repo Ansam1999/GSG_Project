@@ -1,0 +1,18 @@
+.popup{
+    position: fixed;
+   
+    top: calc((60*100vh)/990);
+    left: calc((125*100vw)/1440);
+    right:  calc((125*100vw)/1440);
+    bottom:  calc((52*100vh)/990);
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF; 
+    box-shadow: 0 5px 20px 0 RGBA(0, 0, 0, 0.05);
+    z-index: 5;
+    height:  calc((878*100vh)/990);
+    
+}
+.popup:after{
+    display: none;
+}

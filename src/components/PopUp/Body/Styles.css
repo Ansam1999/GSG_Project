@@ -1,0 +1,32 @@
+.popup_body {
+  width: 100%;
+  overflow-x: hidden;
+   height: calc((798*100vh)/990);
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px 27px 24px 24px;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+.view_details {
+  padding: 10px 33.56px;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: black;
+  box-shadow: 0 5px 20px 0 RGBA(0, 0, 0, 0.05);
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}

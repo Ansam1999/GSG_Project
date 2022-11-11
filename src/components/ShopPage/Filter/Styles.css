@@ -1,0 +1,16 @@
+.filter_section{
+    width: calc((260*100vw)/1440);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: calc((153*100vw)/1440);
+    margin-right: 30px;
+}
+
+.line{
+   border:1px solid rgba(243,243,243, 1);
+opacity: 1;
+background-color: rgba(243,243,243, 1);
+width: 100%;
+
+}

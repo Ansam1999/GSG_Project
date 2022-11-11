@@ -1,0 +1,22 @@
+.featured_products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+}
+
+@media only screen and (max-width: 750px) {
+  .featured_products {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+}
+
+@media only screen and (max-width:450px) {
+
+
+}

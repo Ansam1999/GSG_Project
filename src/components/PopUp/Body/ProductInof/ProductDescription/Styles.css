@@ -1,0 +1,15 @@
+.popup_description{
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: calc((65*100vh)/990);
+}
+@media only screen and (max-width:750px) {
+ .popup_description{
+    width: 100%;
+    padding-bottom: 30px;
+ }
+    }

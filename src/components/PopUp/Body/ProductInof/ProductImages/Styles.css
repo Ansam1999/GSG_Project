@@ -1,0 +1,31 @@
+.popup_images{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 28px;
+    align-items: flex-start;
+    justify-content: space-between;
+height: 100%;
+ padding-bottom: 20px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+}
+@media only screen and (max-width:950px) {
+    .popup_images{
+     flex-direction: column-reverse;
+     
+     justify-content:flex-end;
+   padding: 0;
+     
+     height: 100%;
+    }
+  }
+@media only screen and (max-width:750px) {
+  .popup_images{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 30px;
+  }
+}

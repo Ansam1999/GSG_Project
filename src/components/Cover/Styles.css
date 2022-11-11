@@ -1,0 +1,23 @@
+.cover_section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+.cover{
+    width: 100%;
+    height: calc(100%-120px);
+    z-index: -1;
+    position: relative;
+}
+
+
+@media screen and(max-width:750px)  {
+ 
+
+    .cover{
+        width:100%;
+    }
+}

@@ -1,0 +1,17 @@
+.big_image{
+    margin-left: 30px;
+  height: calc((690*100vh)/990);
+    object-fit: fill;
+  overflow: hidden;
+  height: 100%;
+background-color: aquamarine;
+opacity: 1;
+}
+@media only screen and (max-width:950px) {
+  .big_image{
+    height:70%;
+    width: 100%;
+    background-color: aqua;
+    margin: 0;
+  }
+  }

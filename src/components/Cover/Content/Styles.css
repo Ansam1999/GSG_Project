@@ -1,0 +1,55 @@
+.cover_content{
+    position: absolute;
+    z-index: 1;
+     width: 458px;
+   
+     margin-right: calc((150*100vw)/1440);
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+.cover_txt{
+    font-size: 60px;
+    line-height: 80px;
+    opacity: 100%;   
+    color: white;
+}
+.shop_button{
+    border: none;
+   text-decoration: none;
+   background-color: transparent;
+   color: white;
+   font-size: 12px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   line-height: 20px;
+   font-family: "Proxima Nova";
+   padding-bottom: 10px;
+   border-bottom: 2px solid white;
+   width:max-content;
+   margin-top: 17px;
+   height: 30px;
+}
+.shop_button:hover{
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid black;
+}
+@media only screen and (max-width:750px){
+    .cover_content{
+         width: 150px;
+         margin-right: 50px;
+    }
+    .cover_txt{
+      font-size: 20px;
+     line-height: 30px;
+      text-align: left;
+      
+      
+    }
+    .shop_button{
+        font-size: 10px;
+        line-height:10px;
+    }
+    
+}

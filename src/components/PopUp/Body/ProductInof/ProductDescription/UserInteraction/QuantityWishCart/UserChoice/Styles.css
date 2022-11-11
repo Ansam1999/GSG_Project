@@ -1,0 +1,15 @@
+.control_choice{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+
+
+}
+
+@media only screen and (max-width:450px) {
+.control_choice{
+    flex-direction: column;
+    align-items: flex-start;
+}
+}

@@ -1,0 +1,35 @@
+.about_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  height: calc((430*100vw)/1440);
+}
+.about_content img {
+  width: 50%;
+  height: calc((430*100vw)/1440);
+}
+
+@media only screen and (max-width: 750px) {
+  .about_content {
+    flex-direction: column;
+    height: max-content;
+  }
+  .about_content img {
+    align-self: center;
+    max-width: 65%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+    .about_content {
+      flex-direction: column;
+      height:auto;
+    }
+    .about_content img {
+      align-self: center;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,79 @@
+.shop_items{
+    display:flex ;
+   
+    justify-content: space-between;
+    width:100%;
+    position: relative;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.shop_item{
+    display: flex;
+    position: relative;
+    height:calc((400*100vw)/1440);
+    margin-bottom: calc((15*100vw)/1440);
+}
+.shopImg{
+    z-index: -1;
+   opacity: 1;
+    width: 100%;
+    object-fit:fill;
+}
+.shopType{
+    width:100%;
+    position: absolute;
+    background-color: white;
+   top:calc((290*100vw)/1440);
+    text-align: center;
+    border: none;
+    height: 50px;
+    opacity: 1;
+color: rgba(3,3,3,1);
+font-family: "VLNewParisHeadline";
+font-size: 18px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 0px;
+
+line-height: 30px;
+}
+
+.shopButton{
+    position: absolute;
+    top:calc((180*100vw)/1440);
+    left: 13%;
+    width: 74%;
+   height: 40px;
+   border: none;
+   color: white;
+   background-color: black;
+   display: none;
+}
+.shop_item:hover .shopImg {
+   opacity: 0.5;
+   
+}
+.shop_item:hover .shopButton{
+    display: block;
+}
+.shopButton:hover{
+    cursor: pointer;
+ 
+}
+@media only screen and (max-width:750px){
+    .shop_items{
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:750px){
+    .shop_items{
+        overflow-x: auto;
+        width: 100%;
+    }
+    .shop_item{
+        width: 40%;
+        height: auto;
+    }
+}

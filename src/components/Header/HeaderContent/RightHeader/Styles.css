@@ -1,0 +1,38 @@
+.right_header{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.login{
+    border: none;
+    background-color: white;
+    font-family: "ProximaNova";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+text-align: left;
+
+}
+.login:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.icon{
+    margin-left: 30px;
+}
+.icon:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:750px) {
+    .right_header{
+        flex-direction: row-reverse;
+        width: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    }
+}

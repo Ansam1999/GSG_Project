@@ -1,0 +1,29 @@
+.popup_header{
+    height:auto;
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 20px 0 RGBA(0, 0, 0, 0.05);
+  padding: 20px 25px 20px 25px ;
+  box-sizing: border-box;
+}
+.popup_title{
+    
+    opacity: 1;
+color: rgba(3,3,3,1);
+font-family: "ProximaNova-Light";
+font-size: 18px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: 0px;
+text-align: left;
+line-height: 40px; 
+}
+.close_icon{
+  color: #000000;
+
+}
+.close_icon:hover{
+  cursor: pointer;
+}

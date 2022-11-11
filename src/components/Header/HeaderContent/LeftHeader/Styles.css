@@ -1,0 +1,33 @@
+.left_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 50%;
+    padding-right: 73px;
+}
+.select{
+    border: none;
+   text-align: center;
+   font-size: 12px;
+   font-family: "Proxima Nova";
+
+}
+
+
+@media only screen and (max-width:750px) {
+ .left_header{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+ 
+    margin: 0;
+    padding: 0;
+ }   
+ .select{
+    margin: 0;
+    margin-bottom: 10px;
+ }
+}

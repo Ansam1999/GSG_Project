@@ -1,0 +1,23 @@
+.popup_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height:  calc((690*100vh)/990);
+    margin-bottom: 20px;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width:750px) {
+    .popup_info{
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 0;
+        
+    }
+}

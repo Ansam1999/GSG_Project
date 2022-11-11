@@ -1,0 +1,38 @@
+.slider{
+    position: absolute;
+   
+   
+    background-color:rgb(0, 0, 0,0.3);
+    width: 50px;
+    height: 90px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow{
+    font-size: 24px;
+   width: 30px;
+    color: white;
+    text-align: center;
+    
+}
+.slider:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:750px) {
+    .slider{
+        height: 50px;
+        width: 20px;
+        border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    }
+    .arrow{
+        font-size: 14px;
+    }
+}

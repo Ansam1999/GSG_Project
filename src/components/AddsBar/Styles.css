@@ -1,0 +1,27 @@
+.main_container{
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    padding-left:calc((529*100vw)/1440)
+}
+@media only screen and(max-width:750px){
+    .main_container{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and(max-width:450px){
+    .main_container{
+        width: 100%;
+      
+    }
+    
+}
