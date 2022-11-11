@@ -16,6 +16,7 @@ const ShopPage = () => {
   }, []);
 
   products && products.map((item) => categories.add(item.category));
+
   return (
     <div className="shop_page">
       <Filter categories={categories} setCategory={setCategory} />
