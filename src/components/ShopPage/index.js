@@ -8,7 +8,7 @@ const ShopPage = () => {
   const [products, setProducts] = useState([]);
   const [displayCategory, setCategory] = useState("");
   const categories = new Set();
-
+  //
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products")
