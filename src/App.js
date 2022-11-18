@@ -1,14 +1,8 @@
 import "./App.css";
-
-import HomePage from "./views/HomePage";
-import ProductListing from "./views/ProductListing";
+import Router from "./Router";
 
 function App() {
-  return (
-    <>
-      <ProductListing />
-    </>
-  );
+  return <Router />;
 }
 
 export default App;

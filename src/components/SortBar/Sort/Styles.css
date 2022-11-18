@@ -13,7 +13,7 @@ margin-right: 25px;
 .sorting{
     display: flex;
     flex-direction: row;
-    margin-right: 150px;
+    margin-right:calc((150*100vw)/1440);
     align-items: center;
     
 }
@@ -32,3 +32,10 @@ width: 165px;
 height: 40px;
 border:1px solid #DEDEDE
 }
+
+@media only screen and (max-width:750px) {
+  .sort_title{
+    font-size: 14px;
+  }
+    
+ }

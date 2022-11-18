@@ -3,8 +3,8 @@ import PopUp from "../../PopUp";
 import ProductCard from "../../Shared/ProductCard";
 import "./Styles.css";
 
-const FeaturedProducts = () => {
-  const featuredProducts = [
+const FeaturedProducts = ({ products }) => {
+  /*const featuredProducts = [
     {
       image: "./assets/img2.png",
       title: "Pueraria Mirifica And Study Phyto Estrogens",
@@ -62,12 +62,12 @@ const FeaturedProducts = () => {
       new: false,
       id: 8,
     },
-  ];
+  ];*/
 
   return (
     <div className="featured_products">
-      {featuredProducts.map((item, index) => (
-        <ProductCard key1={index} item={item} />
+      {products.map((item, index) => (
+        <ProductCard key1={index} item={item} allProducts={products} />
       ))}
     </div>
   );

@@ -5,6 +5,7 @@ import ReactStars from "react-rating-stars-component";
 
 const Rate = (props) => {
   const rating = props.rate;
+  console.log(rating);
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };

@@ -11,8 +11,8 @@ const ProductImages = (props) => {
   };
   return (
     <div className="popup_images">
-      <ImagesList images={images} displayImage={display} />
-      <BigImage image={displayedImage} />
+      <ImagesList images={[images]} displayImage={display} />
+      <BigImage image={images} />
     </div>
   );
 };

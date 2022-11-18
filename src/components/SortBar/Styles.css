@@ -8,6 +8,7 @@ height: 60px;
 box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
 opacity: 1;
 background-color: rgba(255,255,255, 1);
+overflow: hidden;
 }
 .women_title{
     opacity: 1;
@@ -20,5 +21,13 @@ font-style: normal;
 letter-spacing: 0px;
 text-align: left;
 line-height: 40px;
-margin-left: 153px;
+margin-left:calc((153*100vw)/1440) ;
+}
+
+@media only screen and (max-width:750px) {
+   .women_title {
+    font-size: 14px;
+   }
+ 
+   
 }

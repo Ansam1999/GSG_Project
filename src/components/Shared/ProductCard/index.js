@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PopUp from "../../PopUp";
 import "./Styles.css";
 
-const ProductCard = ({ key1, item }) => {
+const ProductCard = ({ key1, item, allProducts }) => {
   const [trigger, setTrigger] = useState(false);
   const [id, setId] = useState("");
 
@@ -28,7 +28,12 @@ const ProductCard = ({ key1, item }) => {
       >
         Quick View
       </button>
-      <PopUp trigger={trigger} id={id} handleClose={closePopUp} />
+      <PopUp
+        trigger={trigger}
+        id={id}
+        allProducts={allProducts}
+        handleClose={closePopUp}
+      />
     </div>
   );
 };

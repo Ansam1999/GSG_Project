@@ -4,6 +4,7 @@ import React from "react";
 import Rate from "./Rate";
 
 const PriceRate = (props) => {
+  console.log("rate", props);
   return (
     <div className="rate_price">
       <span className="price">SGD {props.price}</span>

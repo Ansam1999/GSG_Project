@@ -6,5 +6,28 @@
     height: fit-content;
     justify-content: space-between;
     background-color: #fcfcfc;
+    width: 100%;
     margin-right: calc((149*100vw)/1440);
+}
+.loading{
+ 
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+color: rgba(51,51,58,1);
+font-family: "ProximaNova-Semibold";
+font-size: 12px;
+font-weight: 600;
+font-style: normal;
+letter-spacing: 2px;
+text-align: center;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.load_icon{
+    margin-right: 10px;
 }

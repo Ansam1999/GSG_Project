@@ -1,19 +1,15 @@
-import React from "react";
-import AddsBar from "./../components/AddsBar";
-import Header from "./../components/Header";
+import React, { useState } from "react";
+
 import FixedCover from "./../components/FixedCover";
-import Footer from "./../components/Footer";
 import SortBar from "../components/SortBar";
 import ShopPage from "../components/ShopPage";
-const ProductListing = () => {
+const ProductListing = ({ products }) => {
+  const [sort, setSort] = useState("");
   return (
     <>
-      <AddsBar />
-      <Header />
       <FixedCover />
-      <SortBar />
-      <ShopPage />
-      <Footer />
+      <SortBar products={products} setSort={setSort} />
+      <ShopPage products={products} sortOn={sort} />
     </>
   );
 };
