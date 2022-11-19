@@ -6,11 +6,20 @@ import axios from "axios";
 
 const ShopPage = ({ products, sortOn }) => {
   const [displayCategory, setCategory] = useState("");
-
+  console.log(products);
   const categories = new Set();
 
   products && products.map((item) => categories.add(item.category));
-  sortOn && products.sort((a, b) => a.price - b.price);
+  console.log(sortOn);
+  if (sortOn) {
+    if (sortOn === "price") {
+      products.sort((a, b) => a.price - b.price);
+    } else if (sortOn === "title") {
+      products.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortOn === "rating") {
+      products.sort((a, b) => b.rating.rate - a.rating.rate);
+    }
+  }
   console.log(sortOn);
   return (
     <div className="shop_page">

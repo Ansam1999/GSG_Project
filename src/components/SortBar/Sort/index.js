@@ -17,6 +17,8 @@ const Sort = ({ products, handleSort }) => {
           Selected
         </option>
         <option value="price">Price</option>
+        <option value="rating">Rating</option>
+        <option value="title">Title</option>
       </select>
     </div>
   );
