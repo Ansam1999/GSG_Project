@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Body from "./Body";
 import "./Styles.css";
 
 //import products from "./../../products.json";
 import PopupHeader from "./PopupHeader";
+import { productsContext } from "../../context/productsContext";
 const PopUp = (props) => {
   const trigger = props.trigger;
   const id = props.id;
-
-  let product = props.allProducts.find((product) => product.id === id);
+  console.log("popup", props);
+  const products = useContext(productsContext);
+  let product = products.find((product) => product.id === id);
+  console.log(product);
   if (trigger) {
     document.body.style.overflow = "hidden";
   }
-  if (trigger) {
-  }
-  return trigger ? (
+
+  return (
     <div className="popup">
       <PopupHeader
         title={product.title}
@@ -22,8 +24,6 @@ const PopUp = (props) => {
       />
       <Body {...product} />
     </div>
-  ) : (
-    ""
   );
 };
 

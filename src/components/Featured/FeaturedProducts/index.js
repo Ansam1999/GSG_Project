@@ -67,7 +67,7 @@ const FeaturedProducts = ({ products }) => {
   return (
     <div className="featured_products">
       {products.map((item, index) => (
-        <ProductCard key1={index} item={item} allProducts={products} />
+        <ProductCard key={index} item={item} allProducts={products} />
       ))}
     </div>
   );

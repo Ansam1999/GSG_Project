@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Filter from "./Filter";
 import Products from "./Products";
 import "./Styles.css";
 import axios from "axios";
+import { productsContext } from "../../context/productsContext";
 
-const ShopPage = ({ products, sortOn }) => {
+const ShopPage = ({ sortOn }) => {
   const [displayCategory, setCategory] = useState("");
-  console.log(products);
   const categories = new Set();
+  const products = useContext(productsContext);
 
   products && products.map((item) => categories.add(item.category));
   console.log(sortOn);

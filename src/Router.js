@@ -1,34 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./views/HomePage";
 import ProductListing from "./views/ProductListing";
 import axios from "axios";
+import Login from "./views/Login";
+import { productsContext } from "./context/productsContext";
 const Router = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    let target = false;
-    if (!target) {
-      axios
-        .get("https://fakestoreapi.com/products")
-        .then((response) => setProducts(response.data));
-    }
-    return () => {
-      // cancel the subscription
-      target = true;
-    };
-  }, []);
+  const user = localStorage.getItem("user");
+  const products = useContext(productsContext);
+  console.log(products);
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<HomePage products={products} />} />
-          <Route
-            path="/Shop"
-            element={<ProductListing products={products} />}
-          />
-        </Route>
+          {user ? (
+            <>
+              <Route index path="/" element={<HomePage />} />
+              <Route path="/home" element={<HomePage />} />
+              <Route path="/login" element={<Login />} />
+            </>
+          ) : (
+            <>
+              <Route index path="/" element={<Login />} />
+              <Route path="/login" element={<Login />} />
+            </>
+          )}
+          <Route path="/Shop" element={<ProductListing />} />
+        </Route>{" "}
       </Routes>
     </BrowserRouter>
   );

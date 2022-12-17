@@ -1,8 +1,7 @@
 import "./Styles.css";
 import React, { useState } from "react";
 
-const Quantity = () => {
-  const [quantity, setQuantity] = useState(1);
+const Quantity = ({ setQuantity, quantity }) => {
   const decrementQuantity = () => {
     if (quantity === 1) {
       setQuantity(1);

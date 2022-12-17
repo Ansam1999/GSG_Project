@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Styles.css";
 import Sort from "./Sort";
-const SortBar = ({ products, setSort }) => {
+import { productsContext } from "../../context/productsContext";
+const SortBar = ({ setSort }) => {
+  const products = useContext(productsContext);
+
   return (
     <div className="sort_bar">
       <p className="women_title">Women</p>

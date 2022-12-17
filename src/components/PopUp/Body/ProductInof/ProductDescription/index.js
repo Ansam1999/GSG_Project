@@ -17,7 +17,7 @@ const ProductDescription = (props) => {
       <Description content={data.description} />
       <hr color="#F9F8F6" width="100%" />
       <Table />
-      <UserInteraction />
+      <UserInteraction itemId={data.id} />
     </div>
   );
 };

@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import FixedCover from "./../components/FixedCover";
 import SortBar from "../components/SortBar";
 import ShopPage from "../components/ShopPage";
-const ProductListing = ({ products }) => {
+import { productsContext } from "../context/productsContext";
+const ProductListing = () => {
   const [sort, setSort] = useState("");
   return (
     <>
       <FixedCover />
-      <SortBar products={products} setSort={setSort} />
-      <ShopPage products={products} sortOn={sort} />
+      <SortBar setSort={setSort} />
+      <ShopPage sortOn={sort} />
     </>
   );
 };
